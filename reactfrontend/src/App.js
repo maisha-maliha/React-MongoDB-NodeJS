@@ -1,15 +1,14 @@
 import React, { useEffect } from "react";
 import Axios from 'axios'
 export default function App(){
-    const [list, setList] = React.useState("");
+    const [list, setList] = React.useState([]);
     useEffect(()=>{
         Axios.get('http://localhost:4000/api/shoes')
         .then((res)=> setList(res.data));
-    },[]);
-    let val = [];
-    for(let i = 0; i < list.length; i++){
-        val[i] = <li key={list[i].id}>{list[i].name}</li>;
-    }
+    },[list]);
+    let val = list.map((item)=>{
+        return <li key={item.id}>{item.name}</li>
+    });
     return (
         <div>
             <h1>hello world</h1>
