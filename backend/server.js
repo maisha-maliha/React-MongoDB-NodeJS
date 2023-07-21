@@ -10,7 +10,7 @@ http.createServer(async (req,res)=>{
         try {
             res.writeHead(200, {'Content-Type':'application/json'});
             const dataset = await database.shoes();
-            res.write(dataset.toString());
+            res.write(dataset);
         }
         finally{
             res.end();

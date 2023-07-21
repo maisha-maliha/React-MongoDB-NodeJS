@@ -5,7 +5,7 @@ export default function App(){
     useEffect(()=>{
         Axios.get('http://localhost:4000/api/shoes')
         .then((res)=> setList(res.data));
-    },[list]);
+    },[]);
     let val = list.map((item)=>{
         return <li key={item.id}>{item.name}</li>
     });

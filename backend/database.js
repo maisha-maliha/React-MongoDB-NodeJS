@@ -7,20 +7,16 @@ client.connect();
 async function shoes(){
     try{
         const dataset = await client.db('Ecommerce').collection('shoes').find().toArray();
-        return Buffer.from(JSON.stringify(dataset));
+        return JSON.stringify(dataset);
+        // console.log(dataset);
+        // console.log(JSON.stringify(dataset));
+        // return Buffer.from(JSON.stringify(dataset));
+        // console.log(dataset.toString());// this will convert into obj obj array without the actual values
     }
     catch{
         console.log("db closed");
         await client.close();
     }
 }
-async function user(){
-    try{
-        const dataset = await client.db('Ecommerce').collection('User').find().toArray();
-        return dataset;
-    }
-    catch{
-        await client.close();
-    }
-}
-module.exports = {shoes, user};
+shoes();
+module.exports = {shoes};
