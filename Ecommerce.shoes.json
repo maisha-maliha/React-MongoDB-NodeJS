@@ -1,0 +1,122 @@
+[{
+  "_id": {
+    "$oid": "64b97610a5b563aadd83b266"
+  },
+  "id": 1,
+  "name": "kelani 101",
+  "colors": [
+    "red",
+    "green",
+    "black",
+    "white"
+  ],
+  "size": [
+    32,
+    34,
+    36,
+    40
+  ],
+  "shop_id": 2
+},
+{
+  "_id": {
+    "$oid": "64b9773da5b563aadd83b267"
+  },
+  "id": 2,
+  "shop_id": 1,
+  "name": "maily 201",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "size": [
+    32,
+    36,
+    40
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b97764a5b563aadd83b268"
+  },
+  "id": 3,
+  "shop_id": 2,
+  "name": "k201",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "size": [
+    32,
+    36,
+    40
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b97790a5b563aadd83b269"
+  },
+  "id": 4,
+  "shop_id": 1,
+  "name": "M452 shulai",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "size": [
+    32,
+    36,
+    40
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b977a0a5b563aadd83b26a"
+  },
+  "id": 5,
+  "shop_id": 1,
+  "name": "Ma52 shulai",
+  "colors": [
+    "black",
+    "white",
+    "green"
+  ],
+  "size": [
+    36,
+    40
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b97849a5b563aadd83b26b"
+  },
+  "id": 6,
+  "shop_id": 2,
+  "name": "Pikachula",
+  "colors": [
+    "black",
+    "pink",
+    "green"
+  ],
+  "size": [
+    32,
+    34,
+    36
+  ]
+},
+{
+  "_id": {
+    "$oid": "64ba1b534660ca90972ad6a6"
+  },
+  "id": 7,
+  "shop_id": 1,
+  "name": "kaluka",
+  "colors": [
+    "white",
+    "black"
+  ],
+  "size": [
+    40,
+    44
+  ]
+}]
